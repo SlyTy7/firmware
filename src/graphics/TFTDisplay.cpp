@@ -15,6 +15,10 @@
 extern SX1509 gpioExtender;
 #endif
 
+#ifndef TFT_MESH_OVERRIDE
+#define TFT_MESH_OVERRIDE COLOR565(0xA5, 0xB2, 0xCE)
+#endif
+
 #ifdef TFT_MESH_OVERRIDE
 uint16_t TFT_MESH = TFT_MESH_OVERRIDE;
 #else
